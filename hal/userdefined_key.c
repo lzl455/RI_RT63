@@ -90,8 +90,23 @@ void key_decode(void)
         }
 fn_matrix_tbl:
 
-	    decode_data_l = matrixkey_win_fn_tbl[key_index++];
-        decode_data_h = matrixkey_win_fn_tbl[key_index];
+        if(bwin_mac_sataus)
+        {
+            decode_data_l = matrixkey_win_fn_tbl[key_index++];
+            decode_data_h = matrixkey_win_fn_tbl[key_index];
+        }else
+        {
+            if(key_index =  5*10+2)
+            {
+                decode_data_l = iSTD_UP;
+                decode_data_h = iKEY_TYPE_STD|iKEY_PRESS|iLEFT_ALT;
+            }
+            else if(key_index =  5*11+2)
+            {
+                decode_data_l = iSTD_DOWN;
+                decode_data_h = iKEY_TYPE_STD|iKEY_PRESS|iLEFT_ALT;
+            }
+        }
     }
     else
     {
