@@ -653,7 +653,7 @@ unsigned char const ConfigurationDesc[] = {
     0x02,                                       //bNumInterface,0x02(接口数目)				//20130826
     0x01,                                       //bConfigurationValue
     0x00,                                       //iConfiguration
-    0x80,                                       //bmAttributes,(USB_CONFIG_BUS_POWERED) 测试: 去掉远程唤醒, 避免安卓挂起键盘
+    0xA0,                                       //bmAttributes,(USB_CONFIG_BUS_POWERED|USB_CONFIG_REMOTE_WAKEUP)
     USB_CONFIG_POWER_MA(500),                   //bMaxPower,100mA
 
 //----------------------------------------------
