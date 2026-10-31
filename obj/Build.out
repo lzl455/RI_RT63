@@ -1,0 +1,22 @@
+Microchip MPLAB XC8 C Compiler (PRO Mode) V1.41
+Build date: Jan 24 2017
+Part Support Version: 1.41
+Copyright (C) 2017 Microchip Technology Inc.
+hal\userdefined_key.c:51: warning: (1090) 变量"_press_bt1_time_count"未使用
+MAIN.C:21: warning: (1090) 变量"_bt_index"未使用
+hal\hid_process.c:296: warning: (751) 常量表达式中的算术溢出
+hal\hid_process.c:298: warning: (751) 常量表达式中的算术溢出
+hal\hid_process.c:300: warning: (751) 常量表达式中的算术溢出
+hal\hid_process.c:303: warning: (751) 常量表达式中的算术溢出
+usb_user_process.c:56: warning: (1262) 对象"Fake"位于可用的data空间之外
+usb_user_process.c:76: warning: (1262) 对象"Fake"位于可用的data空间之外
+usb_user_process.c:90: warning: (1262) 对象"Fake"位于可用的data空间之外
+usb_user_process.c:105: warning: (1262) 对象"Fake"位于可用的data空间之外
+usb_user_process.c:138: warning: (1262) 对象"Fake"位于可用的data空间之外
+
+Memory Summary:
+    Program space        used  6ABAh ( 27322) of  6F80h bytes   ( 95.7%)
+    Data space           used   85Eh (  2142) of   8F7h bytes   ( 93.3%)
+    Configuration bits   used     0h (     0) of     0h word    (  0.0%)
+    Data stack space     used     0h (     0) of    80h bytes   (  0.0%)
+
